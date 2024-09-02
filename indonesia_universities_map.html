@@ -1,0 +1,2746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c8c131e1b7ef4e3a233b60ac712ce95 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5c8c131e1b7ef4e3a233b60ac712ce95" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5c8c131e1b7ef4e3a233b60ac712ce95 = L.map(
+                "map_5c8c131e1b7ef4e3a233b60ac712ce95",
+                {
+                    center: [-2.548926, 118.0148634],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b1e9f633f9ea07051eaf5d3ba3d12c4c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b1e9f633f9ea07051eaf5d3ba3d12c4c.addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            var marker_760663a0a2297afdef4e7feeab2d4f65 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_760663a0a2297afdef4e7feeab2d4f65.bindTooltip(
+                `<div>
+                     Akademi Farmasi Mitra Sehat Mandiri Sidoarjo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94ef4cd6859aa51eb87929ab9933d40c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_94ef4cd6859aa51eb87929ab9933d40c.bindTooltip(
+                `<div>
+                     Institut Sains & Teknologi Akprind
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b646c9a179c60200680cb7dee64f1fd = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_3b646c9a179c60200680cb7dee64f1fd.bindTooltip(
+                `<div>
+                     STMIK AMIKOM Yogyakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c90899d6eb5f3d44b7b9aae30e56290 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_3c90899d6eb5f3d44b7b9aae30e56290.bindTooltip(
+                `<div>
+                     STIKES RS Anwar Medika
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33f66f0e9c5a5cb3b60b8a12510edea5 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_33f66f0e9c5a5cb3b60b8a12510edea5.bindTooltip(
+                `<div>
+                     Universitas Katolik Indonesia Atma Jaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23c7a8c2ea18bbdd96c113a67f671f92 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_23c7a8c2ea18bbdd96c113a67f671f92.bindTooltip(
+                `<div>
+                     Universitas Bakrie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_023cc490574b3477e2c25ff9bcac318a = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_023cc490574b3477e2c25ff9bcac318a.bindTooltip(
+                `<div>
+                     Binus University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_020dc07bcac8f021fb1fdd7758fef5ef = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_020dc07bcac8f021fb1fdd7758fef5ef.bindTooltip(
+                `<div>
+                     STIKES Bina Sehat PPNI Mojokerto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7513d999905b8e5c6582840ec3d911af = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7513d999905b8e5c6582840ec3d911af.bindTooltip(
+                `<div>
+                     Universitas Bung Hatta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc2132a8367545284700791f78a13cc7 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_cc2132a8367545284700791f78a13cc7.bindTooltip(
+                `<div>
+                     Universitas Dian Nuswantoro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c5e7c06d119a9f58e84268ed545450b = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_8c5e7c06d119a9f58e84268ed545450b.bindTooltip(
+                `<div>
+                     Universitas Gunadarma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbefca310939cde1aa68ff2a5709c143 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_bbefca310939cde1aa68ff2a5709c143.bindTooltip(
+                `<div>
+                     Universitas Ibn Chaldun Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9730b32eb99f102d5af1b25525d5a99 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f9730b32eb99f102d5af1b25525d5a99.bindTooltip(
+                `<div>
+                     Universitas Indonusa Esa Unggul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce6ad57b6945bddbfc85efce9f6c29fd = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_ce6ad57b6945bddbfc85efce9f6c29fd.bindTooltip(
+                `<div>
+                     Bogor Agricultural University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64d2589e0791f4feef76893c4d250d22 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_64d2589e0791f4feef76893c4d250d22.bindTooltip(
+                `<div>
+                     Institut Sains dan Teknologi Al Kamal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94926602db57c992e9554c9ab21aba44 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_94926602db57c992e9554c9ab21aba44.bindTooltip(
+                `<div>
+                     Institut Teknologi Adhi Tama Surabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47014b2d7e1011e73eb26f9248c9dd61 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_47014b2d7e1011e73eb26f9248c9dd61.bindTooltip(
+                `<div>
+                     Institut Teknologi Bandung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9713a890f319baa16889b95d6ecbb961 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_9713a890f319baa16889b95d6ecbb961.bindTooltip(
+                `<div>
+                     Institut Teknologi Sepuluh Nopember
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ccbbd3ec8bee1bde2ee646909da9ae4 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_0ccbbd3ec8bee1bde2ee646909da9ae4.bindTooltip(
+                `<div>
+                     Universitas Janabadra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9aa536f408ad8738dee4af9d137ac2c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_e9aa536f408ad8738dee4af9d137ac2c.bindTooltip(
+                `<div>
+                     Universitas Jayabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_942cd73da90882852d00afa73556226d = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_942cd73da90882852d00afa73556226d.bindTooltip(
+                `<div>
+                     Universitas Ma Chung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea95ae69d609d79b951b26fdc96c74a3 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_ea95ae69d609d79b951b26fdc96c74a3.bindTooltip(
+                `<div>
+                     Universitas Maarif Hasyim Latif
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3d600210f315fcc13bd3e40f595cb33 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_e3d600210f315fcc13bd3e40f595cb33.bindTooltip(
+                `<div>
+                     Universitas Mahendradatta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be0b015c02d5b9df0f60a3c145728daa = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_be0b015c02d5b9df0f60a3c145728daa.bindTooltip(
+                `<div>
+                     Universitas Negeri Malang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_068a4d9f25a09d0a17c7096de2b509c6 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_068a4d9f25a09d0a17c7096de2b509c6.bindTooltip(
+                `<div>
+                     Universitas Kristen Maranatha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b52b696ff01e8fc4e098365f5ad046c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_9b52b696ff01e8fc4e098365f5ad046c.bindTooltip(
+                `<div>
+                     Universitas Mercu Buana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2404a44b8e36c7c7b258cd4b39ca18bb = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2404a44b8e36c7c7b258cd4b39ca18bb.bindTooltip(
+                `<div>
+                     Universitas Dr. R. Moestopo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5481e3baa37a0ee70d6e7a616c3783ec = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_5481e3baa37a0ee70d6e7a616c3783ec.bindTooltip(
+                `<div>
+                     Universitas Narotama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab585cb8819f9ac12ff64e1663539ade = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_ab585cb8819f9ac12ff64e1663539ade.bindTooltip(
+                `<div>
+                     Universitas HKBP Nommensen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4057082385b51ef7f45445c1d5a1a861 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_4057082385b51ef7f45445c1d5a1a861.bindTooltip(
+                `<div>
+                     Universitas Pembangunan Panca Budi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78b4a9700401abff42d077a3029406d6 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_78b4a9700401abff42d077a3029406d6.bindTooltip(
+                `<div>
+                     Universitas Paramadina Mulya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d55b977e84a093fac276fd7cbacd0e5 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_5d55b977e84a093fac276fd7cbacd0e5.bindTooltip(
+                `<div>
+                     Universitas Nasional Pasim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c509778d63d312b2eb2cc6b8b3ec57fc = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c509778d63d312b2eb2cc6b8b3ec57fc.bindTooltip(
+                `<div>
+                     STIE Perbanas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23fc12d561e8ce367a3b53e30083d6c6 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_23fc12d561e8ce367a3b53e30083d6c6.bindTooltip(
+                `<div>
+                     Perbanas Institute
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_863db022ebb47549c21588889a69e6c1 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_863db022ebb47549c21588889a69e6c1.bindTooltip(
+                `<div>
+                     Universitas Kristen Petra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c079a63e46133f2d798e5829fa693d61 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c079a63e46133f2d798e5829fa693d61.bindTooltip(
+                `<div>
+                     Prasetiya Mulya Business School
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7f097044ab91e32be47cc8908aaa1be = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_a7f097044ab91e32be47cc8908aaa1be.bindTooltip(
+                `<div>
+                     Politeknik Negeri Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a4d5087a67007b8e3e84bb983df639e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_4a4d5087a67007b8e3e84bb983df639e.bindTooltip(
+                `<div>
+                     Politeknik Negeri Lhokseumawe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a99b9a4694a9373cd598042457019b26 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_a99b9a4694a9373cd598042457019b26.bindTooltip(
+                `<div>
+                     Politeknik Negeri Bandung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42c25e1c1f817321e87db058a281458b = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_42c25e1c1f817321e87db058a281458b.bindTooltip(
+                `<div>
+                     Politeknik Negeri Semarang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74dabe22a43e3187a710a598e699070e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_74dabe22a43e3187a710a598e699070e.bindTooltip(
+                `<div>
+                     Politeknik Negeri Padang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7169d2e3121c36a76e4d22b9c17f36d = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_e7169d2e3121c36a76e4d22b9c17f36d.bindTooltip(
+                `<div>
+                     Politeknik Negeri Pontianak
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a014e542fd0f8b01042cf26026d34ab = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_6a014e542fd0f8b01042cf26026d34ab.bindTooltip(
+                `<div>
+                     Politeknik Negeri Malang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a87502ec9a47f35ba97ed10b1c1c431 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7a87502ec9a47f35ba97ed10b1c1c431.bindTooltip(
+                `<div>
+                     Politeknik Pos Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19dd08d3828323e1b98bf8fa35efff4c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_19dd08d3828323e1b98bf8fa35efff4c.bindTooltip(
+                `<div>
+                     Politeknik Negeri Sambas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f14361ed7779e52ce5c5c43ec3d32e5 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2f14361ed7779e52ce5c5c43ec3d32e5.bindTooltip(
+                `<div>
+                     Universitas Putera Batam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_095739079b7b749ad0eb647151c39ca6 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_095739079b7b749ad0eb647151c39ca6.bindTooltip(
+                `<div>
+                     Universitas Sarjanawiyata Tamansiswa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1412a9d373a893935696065bbf140047 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_1412a9d373a893935696065bbf140047.bindTooltip(
+                `<div>
+                     Swiss German University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4baf70dc80514a5080964da9e5978fc2 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_4baf70dc80514a5080964da9e5978fc2.bindTooltip(
+                `<div>
+                     STMIK Sinar Nusantara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00b85efacd8482aec6cac21c77c8f3ae = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_00b85efacd8482aec6cac21c77c8f3ae.bindTooltip(
+                `<div>
+                     Sekolah Tinggi Akuntansi Negara (STAN)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_527690e7814f3b8bb4cbb8888648671d = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_527690e7814f3b8bb4cbb8888648671d.bindTooltip(
+                `<div>
+                     Trisakti Institute of Tourism
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e98d1fd7b076d80296382cdd8cc9c36 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_6e98d1fd7b076d80296382cdd8cc9c36.bindTooltip(
+                `<div>
+                     Universitas Telkom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e8716fcb3128c1ee011686dca476ebc = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_5e8716fcb3128c1ee011686dca476ebc.bindTooltip(
+                `<div>
+                     Universitas Klabat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fc5d4f16100eefd1f4a78f1e8e5361a = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_1fc5d4f16100eefd1f4a78f1e8e5361a.bindTooltip(
+                `<div>
+                     Universitas Trisakti
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac15b4d33295bcb59b3060676a75fa0b = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_ac15b4d33295bcb59b3060676a75fa0b.bindTooltip(
+                `<div>
+                     Universitas Ahmad Dahlan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b75b9d82d235c1b5a50eebd927169c6e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_b75b9d82d235c1b5a50eebd927169c6e.bindTooltip(
+                `<div>
+                     Universitas Atma Jaya Yogyakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc3fc4d076fa21ea72b13cf39555df05 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_fc3fc4d076fa21ea72b13cf39555df05.bindTooltip(
+                `<div>
+                     Universitas Brawijaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1e42ea948cf721b71ffe2219c1bf370 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c1e42ea948cf721b71ffe2219c1bf370.bindTooltip(
+                `<div>
+                     Universitas Surabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b70a19ae3fe4e79d951da5e78e0b260 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_4b70a19ae3fe4e79d951da5e78e0b260.bindTooltip(
+                `<div>
+                     Universitas Bhayangkara Surabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_621f23955a234d6cf4e279f08ecf0c03 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_621f23955a234d6cf4e279f08ecf0c03.bindTooltip(
+                `<div>
+                     Universitas Bhayangkara Jakarta Raya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2a4b149fab897b6dbcd3354e6a6f415 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f2a4b149fab897b6dbcd3354e6a6f415.bindTooltip(
+                `<div>
+                     Universitas Bunda Mulia Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7186f74adde822e3378ca423970344e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c7186f74adde822e3378ca423970344e.bindTooltip(
+                `<div>
+                     Universitas Darma Agung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65304b4bee78a53e4e20db8a58b1c08e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_65304b4bee78a53e4e20db8a58b1c08e.bindTooltip(
+                `<div>
+                     Universitas Gadjah Mada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae7afc9fc02c99d0c1cdeb226849332c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_ae7afc9fc02c99d0c1cdeb226849332c.bindTooltip(
+                `<div>
+                     Universitas Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_597b04f20fef4c93f2e15b8170e2a296 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_597b04f20fef4c93f2e15b8170e2a296.bindTooltip(
+                `<div>
+                     Universitas Islam Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60b21550c7b2ebf6c319d437347b9a57 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_60b21550c7b2ebf6c319d437347b9a57.bindTooltip(
+                `<div>
+                     Universitas Ibn Khaldun Bogor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acddd6e39cd773e17a648674e2954599 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_acddd6e39cd773e17a648674e2954599.bindTooltip(
+                `<div>
+                     Universitas Islam Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5124a3f253dd7a2994c03575bc0a7699 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_5124a3f253dd7a2994c03575bc0a7699.bindTooltip(
+                `<div>
+                     Universitas Islam Riau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef0570e1bcc8a54e091bbfe1453af96c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_ef0570e1bcc8a54e091bbfe1453af96c.bindTooltip(
+                `<div>
+                     Universitas Islam Sumatera Utara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9bb2de13fc53470c9645652a94e8e26 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f9bb2de13fc53470c9645652a94e8e26.bindTooltip(
+                `<div>
+                     Universitas Kristen Duta Wacana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0aea2526684ef624d0979b94b68d4248 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_0aea2526684ef624d0979b94b68d4248.bindTooltip(
+                `<div>
+                     Universitas Kristen Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1be2b75d967587fb7fba17629d3aeb7 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f1be2b75d967587fb7fba17629d3aeb7.bindTooltip(
+                `<div>
+                     Universitas Kristen Indonesia Tomohon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b99f95c4b1e5f61f5f050f6b7165f2b = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_1b99f95c4b1e5f61f5f050f6b7165f2b.bindTooltip(
+                `<div>
+                     Universitas Kristen Krida Wacana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb7f9e12df14a01d18d2d51df180ab41 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_bb7f9e12df14a01d18d2d51df180ab41.bindTooltip(
+                `<div>
+                     Universitas Kristen Satya Wacana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4922af1aa684b2ea7315cdea2cee077 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_d4922af1aa684b2ea7315cdea2cee077.bindTooltip(
+                `<div>
+                     Universitas Muslim Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6352c650950b4162cf9a3df650cdd36 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_d6352c650950b4162cf9a3df650cdd36.bindTooltip(
+                `<div>
+                     Universitas Methodist Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2c30a4ea0626bd167173c650bfa52bf = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c2c30a4ea0626bd167173c650bfa52bf.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7137b9f26554f926aa752cbdfa547454 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7137b9f26554f926aa752cbdfa547454.bindTooltip(
+                `<div>
+                     Universitas Muria Kudus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2e40265262dc559824d59a81a2e3598 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f2e40265262dc559824d59a81a2e3598.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Malang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22b0dd9fc2ce92d9086e9d4537a7a8eb = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_22b0dd9fc2ce92d9086e9d4537a7a8eb.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Magelang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9c12950d83a99357eaa8f9c00776918 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_a9c12950d83a99357eaa8f9c00776918.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Sidoarjo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d452ee905123d5ddaec902e4c904b962 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_d452ee905123d5ddaec902e4c904b962.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Surakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1501ff291e1df5d11ace622320989996 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_1501ff291e1df5d11ace622320989996.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Sumatra Utara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b973ba18350260636cb5354f53fe0fce = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_b973ba18350260636cb5354f53fe0fce.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Yogyakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1b40375e3783dcd5386a74e844ece03 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_b1b40375e3783dcd5386a74e844ece03.bindTooltip(
+                `<div>
+                     Universitas Advent Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd6f5389b8ec6505664c632250cdc2a3 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_bd6f5389b8ec6505664c632250cdc2a3.bindTooltip(
+                `<div>
+                     Universitas Airlangga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0530e2c9ea3e8b2a03631b34194bdef = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_b0530e2c9ea3e8b2a03631b34194bdef.bindTooltip(
+                `<div>
+                     Universitas Andalas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06a31eb74e7ca6eea3c9c16b7417a659 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_06a31eb74e7ca6eea3c9c16b7417a659.bindTooltip(
+                `<div>
+                     Universitas Nasional Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8a799b5a2a3f76a7c8969386b3fa673 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_a8a799b5a2a3f76a7c8969386b3fa673.bindTooltip(
+                `<div>
+                     Universitas Cenderawasih
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_668086c2b48fd25c022eccdd72c9acd5 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_668086c2b48fd25c022eccdd72c9acd5.bindTooltip(
+                `<div>
+                     Universitas Nusa Cendana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b45b92a7343e6ac478ec7a5650a77487 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_b45b92a7343e6ac478ec7a5650a77487.bindTooltip(
+                `<div>
+                     Universitas Diponegoro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7238dfa5715b41d12eef7b66e505f184 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7238dfa5715b41d12eef7b66e505f184.bindTooltip(
+                `<div>
+                     Universitas Jember
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c3bb5d1b78bd4d1ada410f07f01c2ae = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_9c3bb5d1b78bd4d1ada410f07f01c2ae.bindTooltip(
+                `<div>
+                     Universitas Negeri Surabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_deee2cbcc0c1b4a373e5b40b9d3d6f29 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_deee2cbcc0c1b4a373e5b40b9d3d6f29.bindTooltip(
+                `<div>
+                     Universitas Negeri Gorontalo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c9198376d26232c1f6696b1c2fc04f4 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_4c9198376d26232c1f6696b1c2fc04f4.bindTooltip(
+                `<div>
+                     Universitas Haluoleo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_698575a1ab911804a36df166d741ec44 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_698575a1ab911804a36df166d741ec44.bindTooltip(
+                `<div>
+                     Universitas Amir Hamzah
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd2ed8c92cd65b0f98e55fa0759ad07f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_fd2ed8c92cd65b0f98e55fa0759ad07f.bindTooltip(
+                `<div>
+                     Universitas Hasanuddin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34cc3cb87da565b79c8e35e9b83c8354 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_34cc3cb87da565b79c8e35e9b83c8354.bindTooltip(
+                `<div>
+                     Universitas Bengkulu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ca929064f0e6e4147ee37fcf227a367 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7ca929064f0e6e4147ee37fcf227a367.bindTooltip(
+                `<div>
+                     Universitas Bojonegoro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17afe5d68e1f0cc64adbe74be94b9b83 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_17afe5d68e1f0cc64adbe74be94b9b83.bindTooltip(
+                `<div>
+                     Universitas Katolik Soegijapranoto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_305ff3d3e4f43c718c07ecc843734ea8 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_305ff3d3e4f43c718c07ecc843734ea8.bindTooltip(
+                `<div>
+                     Universitas Pekalongan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f5b3353da4ebbb13e1396eedec1ae17 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2f5b3353da4ebbb13e1396eedec1ae17.bindTooltip(
+                `<div>
+                     Universitas Kediri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb78684c1a7a09182c19f9fa5a875d54 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_eb78684c1a7a09182c19f9fa5a875d54.bindTooltip(
+                `<div>
+                     Universitas Komputer Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bafd03cf0c53fb272686d056faf1abd7 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_bafd03cf0c53fb272686d056faf1abd7.bindTooltip(
+                `<div>
+                     Universitas Lampung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_751e51228ef1f897edfd772cc59f1797 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_751e51228ef1f897edfd772cc59f1797.bindTooltip(
+                `<div>
+                     Universitas Lancang Kuning
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35d029b1a5d6aba878cad7689514105c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_35d029b1a5d6aba878cad7689514105c.bindTooltip(
+                `<div>
+                     Universitas Negeri Manado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5be2f3a6d7878ce56869c9d74dc32bcf = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_5be2f3a6d7878ce56869c9d74dc32bcf.bindTooltip(
+                `<div>
+                     Universitas Negeri Medan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5eb2cff550a95ff4d3245b726e897fc2 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_5eb2cff550a95ff4d3245b726e897fc2.bindTooltip(
+                `<div>
+                     Universitas Islam Nusantara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d017d13c528e5b6e6d3104960e058fa1 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_d017d13c528e5b6e6d3104960e058fa1.bindTooltip(
+                `<div>
+                     Universitas Pesantren Darul Ulum Jombang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f3e2e942f9279e731496a90f3caab13 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7f3e2e942f9279e731496a90f3caab13.bindTooltip(
+                `<div>
+                     Universitas Madura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_012c32d9ab8c0a02b497ef8c3a0c1515 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_012c32d9ab8c0a02b497ef8c3a0c1515.bindTooltip(
+                `<div>
+                     Universitas Islam Bandung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd255b23394a26d36941e8fa01cb511f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_dd255b23394a26d36941e8fa01cb511f.bindTooltip(
+                `<div>
+                     Universitas Islam Malang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39fb153a1b84a42c103c69bf4d440a7c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_39fb153a1b84a42c103c69bf4d440a7c.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Makassar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_273dfb6d0cef22592d6512d484b78740 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_273dfb6d0cef22592d6512d484b78740.bindTooltip(
+                `<div>
+                     Universitas Slamet Riyadi Surakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_622991d6cba2fd6cd3b22669e85f46a4 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_622991d6cba2fd6cd3b22669e85f46a4.bindTooltip(
+                `<div>
+                     Universitas Islam Sultan Agung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b6ec7bc3c4736e7928b1305dc2f3f69 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_1b6ec7bc3c4736e7928b1305dc2f3f69.bindTooltip(
+                `<div>
+                     Universitas Islam Syekh-Yusuf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21ea430ba3784e6ded2cbeffa2baf27e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_21ea430ba3784e6ded2cbeffa2baf27e.bindTooltip(
+                `<div>
+                     Unitomo Surabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e97ca3e0e7a803e5f7f4b0493066d436 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_e97ca3e0e7a803e5f7f4b0493066d436.bindTooltip(
+                `<div>
+                     Universitas Trilogi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e048f6d5bcc94cbb51c3b4cb3161e8f2 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_e048f6d5bcc94cbb51c3b4cb3161e8f2.bindTooltip(
+                `<div>
+                     Universitas Trunojoyo Madura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4bb1d57df591349bce9219aba537cfe = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f4bb1d57df591349bce9219aba537cfe.bindTooltip(
+                `<div>
+                     Universitas Pancasila
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a48c249779f3bc6edee457edb79cf82 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2a48c249779f3bc6edee457edb79cf82.bindTooltip(
+                `<div>
+                     Universitas PGRI Adi Buana Surabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a621179ccfb8a99967a32df42ef8e7c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2a621179ccfb8a99967a32df42ef8e7c.bindTooltip(
+                `<div>
+                     Universitas Jambi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc4900e8df8bd3709735a496b788fee8 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_cc4900e8df8bd3709735a496b788fee8.bindTooltip(
+                `<div>
+                     Universitas Negeri Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_361dae63ba922dff476b4476035baf88 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_361dae63ba922dff476b4476035baf88.bindTooltip(
+                `<div>
+                     Universitas Jenderal Achmad Yani
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbb9310a8150d2aec31893d7a0029bae = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_cbb9310a8150d2aec31893d7a0029bae.bindTooltip(
+                `<div>
+                     Universitas Khairun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f06cc17e6698dd1effb163e85c645119 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f06cc17e6698dd1effb163e85c645119.bindTooltip(
+                `<div>
+                     Universitas Krisnadwipayana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf3fa1dd962078958ec5d427d741d190 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_bf3fa1dd962078958ec5d427d741d190.bindTooltip(
+                `<div>
+                     Universitas Lambung Mangkurat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a48ec9ea695c9b00e7c63f3ab2519de = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_9a48ec9ea695c9b00e7c63f3ab2519de.bindTooltip(
+                `<div>
+                     Universitas Negeri Makassar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a92691243b5dc12bf988621d4481499 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_8a92691243b5dc12bf988621d4481499.bindTooltip(
+                `<div>
+                     Universitas Mahasaraswati Denpasar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d6fa6199940a8a330890e83f87c383f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2d6fa6199940a8a330890e83f87c383f.bindTooltip(
+                `<div>
+                     Universitas Merdeka Malang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f387a8f50967ac678fe1f1cf082d5b7e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f387a8f50967ac678fe1f1cf082d5b7e.bindTooltip(
+                `<div>
+                     Universitas Merdeka Madiun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c9926f6a0e91985e608c583fd48d2ff = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_8c9926f6a0e91985e608c583fd48d2ff.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Jember
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_676ee1898ee877e75dd0cca5966dc848 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_676ee1898ee877e75dd0cca5966dc848.bindTooltip(
+                `<div>
+                     Universitas Muhammadiyah Mataram
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46c92eae399f6fcc02770238a80e8ee4 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_46c92eae399f6fcc02770238a80e8ee4.bindTooltip(
+                `<div>
+                     Universitas Mulawarman
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bb7454328479d39f6f97ba0b0b9d89c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_1bb7454328479d39f6f97ba0b0b9d89c.bindTooltip(
+                `<div>
+                     STMIK Widya Cipta Dharma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adc172e2cfdaa9c734b81037b9b8a9a6 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_adc172e2cfdaa9c734b81037b9b8a9a6.bindTooltip(
+                `<div>
+                     Universitas Negeri Semarang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72761855bfa25ee6e400aa8cc22b6efe = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_72761855bfa25ee6e400aa8cc22b6efe.bindTooltip(
+                `<div>
+                     Universitas Negeri Padang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de7fb84465385ea3cab96e77bdc193e3 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_de7fb84465385ea3cab96e77bdc193e3.bindTooltip(
+                `<div>
+                     Universitas Padjadjaran
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca94d58cfe37646528c07bd6c38c822d = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_ca94d58cfe37646528c07bd6c38c822d.bindTooltip(
+                `<div>
+                     Universitas Pakuan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a399d5a0db81fb729625f9b598010ad8 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_a399d5a0db81fb729625f9b598010ad8.bindTooltip(
+                `<div>
+                     Universitas Katolik Parahyangan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cca4c2d061bd598f0f44fc8e6304396 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_3cca4c2d061bd598f0f44fc8e6304396.bindTooltip(
+                `<div>
+                     Universitas Pasundan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f20fb8bf6a1350fd75c0745d2b36c4d5 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_f20fb8bf6a1350fd75c0745d2b36c4d5.bindTooltip(
+                `<div>
+                     Universitas Pattimura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3d14b181b7e28ef297b073492fe9360 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_b3d14b181b7e28ef297b073492fe9360.bindTooltip(
+                `<div>
+                     Universitas Ngurah Rai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34cff54df4de0bab3c6650d8bdffa679 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_34cff54df4de0bab3c6650d8bdffa679.bindTooltip(
+                `<div>
+                     Universitas Mataram
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72eb95e7472ad80b45de4c89962bee72 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_72eb95e7472ad80b45de4c89962bee72.bindTooltip(
+                `<div>
+                     Universitas Riau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17b5071b74dd0170a549dfa83c83eaee = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_17b5071b74dd0170a549dfa83c83eaee.bindTooltip(
+                `<div>
+                     Universitas Sebelas Maret
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f450400cd3eca8b62537ac2435e6ea0 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_6f450400cd3eca8b62537ac2435e6ea0.bindTooltip(
+                `<div>
+                     Universitas Darma Persada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7e7c1ad2189ff03f4d16b2fa97d560c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c7e7c1ad2189ff03f4d16b2fa97d560c.bindTooltip(
+                `<div>
+                     Universitas Siliwangi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_752678f990654f7c2767f9df9ec9d9da = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_752678f990654f7c2767f9df9ec9d9da.bindTooltip(
+                `<div>
+                     Universitas Jenderal Soedirman
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca143cbc9c6299bce593d1a9b2a351b2 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_ca143cbc9c6299bce593d1a9b2a351b2.bindTooltip(
+                `<div>
+                     Universitas Sam Ratulangi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_accf89d8f1b4c718cdba76229365e79e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_accf89d8f1b4c718cdba76229365e79e.bindTooltip(
+                `<div>
+                     Universitas Sriwijaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e1a00e5b848e5cdb4773098ca96a4f5 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_3e1a00e5b848e5cdb4773098ca96a4f5.bindTooltip(
+                `<div>
+                     Universitas Swadaya Gunung Djati
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6425c814103c4799bd4b2088ae90799d = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_6425c814103c4799bd4b2088ae90799d.bindTooltip(
+                `<div>
+                     Universitas Syiah Kuala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20c19499e7a0065936c6e09abcb6bbdc = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_20c19499e7a0065936c6e09abcb6bbdc.bindTooltip(
+                `<div>
+                     Universitas Tadulako
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1a9fe36411b64b1efe9430486817a2f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_e1a9fe36411b64b1efe9430486817a2f.bindTooltip(
+                `<div>
+                     Universitas 17 Agustus 1945 Surabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3138cc68f873902ac3fcc33ede4663b = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_d3138cc68f873902ac3fcc33ede4663b.bindTooltip(
+                `<div>
+                     Universitas 17 Agustus 1945 Banyuwangi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_859234f9a6f2af9baeb483ffe56757e0 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_859234f9a6f2af9baeb483ffe56757e0.bindTooltip(
+                `<div>
+                     Universitas 17 Agustus 1945 Cirebon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4b1e07b1239713b2eff8b921f369f4d = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_a4b1e07b1239713b2eff8b921f369f4d.bindTooltip(
+                `<div>
+                     Universitas 17 Agustus 1945 Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e0230e184b432586ecf09f3dc9563d8 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7e0230e184b432586ecf09f3dc9563d8.bindTooltip(
+                `<div>
+                     Universitas 17 Agustus 1945 Samarinda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c688028a5729b482bc1e9a8275c6d8a7 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c688028a5729b482bc1e9a8275c6d8a7.bindTooltip(
+                `<div>
+                     Universitas 17 Agustus 1945 Semarang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dabab2757979ae4748a26a5b2646e2e = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_4dabab2757979ae4748a26a5b2646e2e.bindTooltip(
+                `<div>
+                     Universitas Tanjungpura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19cb524376f30fd7b918e0c193688f3c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_19cb524376f30fd7b918e0c193688f3c.bindTooltip(
+                `<div>
+                     Universitas Tarumanagara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f411fa34cc3f2cf11cc829b64ff509f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2f411fa34cc3f2cf11cc829b64ff509f.bindTooltip(
+                `<div>
+                     Universitas Sultan Ageng Tirtayasa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48cecddcab6e103941a0019f65f4ebd0 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_48cecddcab6e103941a0019f65f4ebd0.bindTooltip(
+                `<div>
+                     Universitas Udayana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f308623070ec55b873240eb3745742f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2f308623070ec55b873240eb3745742f.bindTooltip(
+                `<div>
+                     Universitas Wijaya Kusuma Purwokerto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2cf7874cda6a3a2c8075a9defa1c125 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c2cf7874cda6a3a2c8075a9defa1c125.bindTooltip(
+                `<div>
+                     Universitas Negeri Yogyakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c264ceff1fab4af885455c65b7b9f69f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_c264ceff1fab4af885455c65b7b9f69f.bindTooltip(
+                `<div>
+                     Universitas Proklamasi 45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8989fb62bc4c17ae55d49d82b1d1c6bc = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_8989fb62bc4c17ae55d49d82b1d1c6bc.bindTooltip(
+                `<div>
+                     Universitas Pelita Harapan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fd3de9ae52a32283589e370dc26a85d = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_6fd3de9ae52a32283589e370dc26a85d.bindTooltip(
+                `<div>
+                     Universitas Pendidikan Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f59497b30997162614a49f74358d6b2 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_4f59497b30997162614a49f74358d6b2.bindTooltip(
+                `<div>
+                     Universitas Pembangunan Nasional "Veteran" Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14ecfe557f6dc30fa175b2ebb84e7d5a = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_14ecfe557f6dc30fa175b2ebb84e7d5a.bindTooltip(
+                `<div>
+                     Universitas Pembangunan Nasional "Veteran" Jawa Timur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ea85fa04f346978f26aea7bc20e6b38 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_5ea85fa04f346978f26aea7bc20e6b38.bindTooltip(
+                `<div>
+                     Universitas Pembangunan Nasional "Veteran" Yogyakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41ae114e910e09b149c9cee04421930c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_41ae114e910e09b149c9cee04421930c.bindTooltip(
+                `<div>
+                     Universitas Palangka Raya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_799cc85a480d39e5c57dce2e1aacdb11 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_799cc85a480d39e5c57dce2e1aacdb11.bindTooltip(
+                `<div>
+                     Universitas Pancasakti Tegal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86dfcfa982e1e677e834488ab7f45828 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_86dfcfa982e1e677e834488ab7f45828.bindTooltip(
+                `<div>
+                     Universitas Sanata Dharma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af32fac79e0c2479a7854e3f9c9b6014 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_af32fac79e0c2479a7854e3f9c9b6014.bindTooltip(
+                `<div>
+                     Universitas Simalungun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0a5263ecce0c5598de08ea83f850427 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_b0a5263ecce0c5598de08ea83f850427.bindTooltip(
+                `<div>
+                     Universitas Semarang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61243e709b1603accefc12d8872a334a = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_61243e709b1603accefc12d8872a334a.bindTooltip(
+                `<div>
+                     Universitas Sumatera Utara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7f861da572a6e3c71a34f37f7b232da = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_d7f861da572a6e3c71a34f37f7b232da.bindTooltip(
+                `<div>
+                     Universitas Terbuka Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bb5379e1d5896c5ab10a3909ee2305c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2bb5379e1d5896c5ab10a3909ee2305c.bindTooltip(
+                `<div>
+                     Universitas Tidar Magelang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c4533de27075a7ad94ec4d84eaa998c = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_1c4533de27075a7ad94ec4d84eaa998c.bindTooltip(
+                `<div>
+                     Universitas Tunas Pembangunan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f7a1c388cc75af5bd33ce69e9611dc6 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_1f7a1c388cc75af5bd33ce69e9611dc6.bindTooltip(
+                `<div>
+                     Universitas Widya Gama Malang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70b1cee4fd18d0e4d1f9e4b399a420f5 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_70b1cee4fd18d0e4d1f9e4b399a420f5.bindTooltip(
+                `<div>
+                     Universitas Katolik Widya Karya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efef1eb3ff1b59f5576a878bcdefe076 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_efef1eb3ff1b59f5576a878bcdefe076.bindTooltip(
+                `<div>
+                     Universitas Widyatama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b3cbe13ad57a6a40479d43571658acf = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_9b3cbe13ad57a6a40479d43571658acf.bindTooltip(
+                `<div>
+                     Universitas Wijaya Kusuma Surabaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdd084f243972e58a58d26a30d63ab9f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_bdd084f243972e58a58d26a30d63ab9f.bindTooltip(
+                `<div>
+                     Universitas Katolik Widya Manadala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e6bb14b033af7e02a1c929595586816 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7e6bb14b033af7e02a1c929595586816.bindTooltip(
+                `<div>
+                     Universitas Wisnuwardhana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b1a8dafeb1ff5693a63a988274c0f60 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_7b1a8dafeb1ff5693a63a988274c0f60.bindTooltip(
+                `<div>
+                     Universitas Persada Indonesia Y.A.I
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dd942c8cf8d2f6b784700f5109b9e5f = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_2dd942c8cf8d2f6b784700f5109b9e5f.bindTooltip(
+                `<div>
+                     Universitas Yarsi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f74a792017a94083ef61d46a789de04 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_5f74a792017a94083ef61d46a789de04.bindTooltip(
+                `<div>
+                     Duta Bangsa University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78a0be45b7f486df2aaedf02171e5668 = L.marker(
+                [-2.548926, 118.0148634],
+                {}
+            ).addTo(map_5c8c131e1b7ef4e3a233b60ac712ce95);
+        
+    
+            marker_78a0be45b7f486df2aaedf02171e5668.bindTooltip(
+                `<div>
+                     Akademi Farmasi Yarsis Pekanbaru
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
